@@ -185,13 +185,9 @@ button:hover {
     padding: 2rem 10rem;
   }
 
-  /* .hero {
-    max-width: unset;  
-  } */
-
   .info__text {
     gap: 2.5rem;
-    padding-top: 2rem;
+    padding-top: 4.5rem;
   }
 
   .info__text h1 {
@@ -209,6 +205,10 @@ button:hover {
     place-self: center start;
     width: 30%;
     padding: 0.875rem 0;
+  }
+
+  .partners {
+    margin-top: 2rem;
   }
 
   .partners__logos {

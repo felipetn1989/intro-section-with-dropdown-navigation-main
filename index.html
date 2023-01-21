@@ -31,10 +31,13 @@
     </header>
 
     <main class="info">
-      <img
-        src="images/image-hero-mobile.png"
-        alt="Picture of a man using a laptop. Around him there are drawings of geometric shapes"
-      />
+      <picture>
+        <source media="(min-width:70em)" srcset="images/image-hero-desktop.png">
+        <img class="hero"
+          src="images/image-hero-mobile.png"
+          alt="Picture of a man using a laptop. Around him there are drawings of geometric shapes"
+        />
+      </picture>
       <div class="info__text">
         <h1>Make remote work</h1>
         <p>

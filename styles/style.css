@@ -111,6 +111,10 @@ header {
   text-align: center;
 }
 
+.hero {
+  margin: auto;
+}
+
 .info__text {
   display: grid;
   gap: 0.875rem;
@@ -153,6 +157,7 @@ button:hover {
 
 .partners__logos {
   width: 5rem;
+  display: inline;
 }
 
 .partners__logos:nth-child(2) {
@@ -165,4 +170,53 @@ button:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 70em) {
+  header {
+    padding: 2rem 2.5rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+    align-items: center;
+    padding: 2rem 10rem;
+  }
+
+  /* .hero {
+    max-width: unset;  
+  } */
+
+  .info__text {
+    gap: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .info__text h1 {
+    line-height: normal;
+    font-size: 5rem;
+    text-align: left;
+  }
+
+  .info__text p {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  button {
+    place-self: center start;
+    width: 30%;
+    padding: 0.875rem 0;
+  }
+
+  .partners__logos {
+    width: 7rem;
+    margin: 0;
+  }
+
+  .partners__logos:nth-child(2) {
+    width: 5rem;
+  }
 }

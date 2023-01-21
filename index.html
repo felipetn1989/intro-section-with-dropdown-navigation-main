@@ -19,7 +19,7 @@
   <body>
     <header>
       <img src="images/logo.svg" alt="Snap logo" />
-      <img src="images/icon-menu.svg" alt="Menu icon" />
+      <img id="menuIcon" src="images/icon-menu.svg" alt="Menu icon" />
       <nav class="menu">
         <a href="#">Features</a>
         <a href="#">Company</a>
@@ -32,8 +32,12 @@
 
     <main class="info">
       <picture>
-        <source media="(min-width:70em)" srcset="images/image-hero-desktop.png">
-        <img class="hero"
+        <source
+          media="(min-width:70em)"
+          srcset="images/image-hero-desktop.png"
+        />
+        <img
+          class="hero"
           src="images/image-hero-mobile.png"
           alt="Picture of a man using a laptop. Around him there are drawings of geometric shapes"
         />
@@ -77,4 +81,5 @@
       >. Coded by <a href="https://github.com/felipetn1989">Felipe Thomé</a>.
     </footer>
   </body>
+  <script src="scripts/script.js"></script>
 </html>

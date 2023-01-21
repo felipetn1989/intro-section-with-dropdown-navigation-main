@@ -100,11 +100,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0.875rem;
+  padding: 1.5rem 0.9375rem;
 }
 
 .menu {
   display: none;
+}
+
+#menuIcon:hover {
+  cursor: pointer;
 }
 
 .info {

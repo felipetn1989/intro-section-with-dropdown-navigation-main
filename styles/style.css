@@ -132,17 +132,43 @@ header {
 }
 
 .menu__innerLevel {
+  display: none;
   padding: 0.5rem 1.375rem;
 }
 
-.menu__expandable::after {
-  content: "";
-  width: .675rem;
-  height: .675rem;
-  background: url('../images/icon-arrow-up.svg') no-repeat center center/contain;
-  display: inline-block;
-  margin-left: .875rem;
+.menu__expandable {
+  display: flex;
+  align-items: center;
+  gap: .875rem;
 }
+
+.list_icon::before {
+  content: '';
+  width: 1.5rem;
+  height: 1.25rem;
+  display: inline-flex;
+  margin-right: .5rem;
+  transform: translateY(.1875rem);
+  background: white no-repeat top center/contain;
+}
+
+.list_icon:nth-child(1)::before {
+  background-image: url('../images/icon-todo.svg');
+}
+
+.list_icon:nth-child(2)::before {
+  background-image: url('../images/icon-calendar.svg');
+}
+
+.list_icon:nth-child(3)::before {
+  background-image: url('../images/icon-reminders.svg');
+}
+
+.list_icon:nth-child(4)::before {
+  background-image: url('../images/icon-planning.svg');
+}
+
+
 
 #menuIcon {
   z-index: 1;

@@ -108,7 +108,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: white;
   width: 65%;
@@ -129,6 +129,11 @@ header {
 
 .menu__topLevel {
   padding: 0 1.375rem;
+}
+
+.menu__topLevel a:hover {
+  cursor: pointer;
+  color: var(--Almost-Black);
 }
 
 .menu__innerLevel {
@@ -188,6 +193,11 @@ header {
   font-weight: var(--fw-medium);
 }
 
+.login:hover,
+.register:hover {
+  cursor: pointer;
+}
+
 .login {
   margin-top: 1rem;
   border: none;
@@ -227,7 +237,7 @@ button {
   margin-bottom: 2rem;
 }
 
-button:hover {
+.learn:hover {
   cursor: pointer;
   background-color: white;
   color: var(--Almost-Black);
@@ -261,6 +271,54 @@ button:hover {
 @media screen and (min-width: 70em) {
   header {
     padding: 2rem 2.5rem;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin-right: 1.75rem;
+  }
+
+  #menuIcon {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: unset;
+    position: unset;
+    top: unset;
+    right: unset;
+    width: 100%;
+    height: unset;
+    padding: unset;
+  }
+
+  .login,
+  .register {
+    margin: unset;
+    width: 6.5rem;
+  }
+
+
+  .menu__topLevel {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu__topLevel a {
+    font-size: .875rem;
+  }
+
+  .menu__expandable {
+    gap: .5rem;
+  }
+
+  .menu__innerLevel {
+    position: absolute;
+    background-color: white;
+    box-shadow: 2px 2px 7px  rgba(0, 0, 0, 0.322);
   }
 
   .info {

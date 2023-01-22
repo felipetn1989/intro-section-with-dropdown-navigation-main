@@ -2,13 +2,21 @@ let menu = document.querySelector(".menu");
 
 menuIcon.addEventListener("click", displayMenu);
 
+/* This function shows and hides the menu in the mobile version. Also, it changes the menu icon between open and closet states */
+
 function displayMenu() {
   if (window.getComputedStyle(menu).display == "none") {
     menu.style.display = "flex";
     menuIcon.src = "images/icon-close-menu.svg";
+    menuIcon.style.position = "fixed";
+    menuIcon.style.right = "0";
+    menuIcon.style.marginRight = "1rem";
   } else {
     menu.style.display = "none";
     menuIcon.src = "images/icon-menu.svg";
+    menuIcon.style.position = "unset";
+    menuIcon.style.right = "unset";
+    menuIcon.style.marginRight = "unset";
   }
 }
 

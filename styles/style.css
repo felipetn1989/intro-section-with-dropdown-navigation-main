@@ -105,7 +105,7 @@ header {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   display: none;
@@ -179,6 +179,13 @@ header {
 
 #menuIcon:hover {
   cursor: pointer;
+}
+
+.menu_buttons {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
 }
 
 .login,
@@ -301,24 +308,23 @@ button {
     width: 6.5rem;
   }
 
-
   .menu__topLevel {
     display: flex;
     gap: 2rem;
   }
 
   .menu__topLevel a {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   .menu__expandable {
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .menu__innerLevel {
     position: absolute;
     background-color: white;
-    box-shadow: 2px 2px 7px  rgba(0, 0, 0, 0.322);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.322);
   }
 
   .info {

@@ -1,5 +1,7 @@
 let menu = document.querySelector(".menu");
 
+let overlay = document.querySelector(".overlay");
+
 menuIcon.addEventListener("click", displayMenu);
 
 /* This function shows and hides the menu in the mobile version. Also, it changes the menu icon between open and closet states */
@@ -11,12 +13,14 @@ function displayMenu() {
     menuIcon.style.position = "fixed";
     menuIcon.style.right = "0";
     menuIcon.style.marginRight = "1rem";
+    overlay.style.display = "block";
   } else {
     menu.style.display = "none";
     menuIcon.src = "images/icon-menu.svg";
     menuIcon.style.position = "unset";
     menuIcon.style.right = "unset";
     menuIcon.style.marginRight = "unset";
+    overlay.style.display = "none";
   }
 }
 

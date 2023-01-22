@@ -21,12 +21,29 @@
       <img src="images/logo.svg" alt="Snap logo" />
       <img id="menuIcon" src="images/icon-menu.svg" alt="Menu icon" />
       <nav class="menu">
-        <a href="#">Features</a>
-        <a href="#">Company</a>
-        <a href="#">Careers</a>
-        <a href="#">About</a>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
+        <ul class="menu__topLevel">
+          <li>
+            <a class="menu__expandable" href="#">Features</a>
+            <ul class="menu__innerLevel">
+              <li class="list_icon"><a href="#">Todo List</a></li>
+              <li class="list_icon"><a href="#">Calendar</a></li>
+              <li class="list_icon"><a href="#">Reminders</a></li>
+              <li class="list_icon"><a href="#">Planning</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu__expandable" href="#">Company</a>
+            <ul class="menu__innerLevel">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <button class="login">Login</button>
+        <button class="register">Register</button>
       </nav>
     </header>
 

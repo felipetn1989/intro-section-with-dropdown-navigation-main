@@ -1,5 +1,11 @@
+let menu = document.querySelector(".menu")
+
 menuIcon.addEventListener("click",displayMenu)
 
 function displayMenu () {
-    alert('test')
+    if (window.getComputedStyle(menu).display == 'none') {
+        menu.style.display = 'flex'
+    } else {
+        menu.style.display = 'none'
+    }
 }

@@ -97,6 +97,7 @@ body {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,11 +105,67 @@ header {
 }
 
 .menu {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 65%;
+  height: 100vh;
+  padding-top: 5rem;
+  line-height: 2.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--Medium-Gray);
+  font-size: 1rem;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu__topLevel {
+  padding: 0 2rem;
+}
+
+.menu__innerLevel {
+  padding: 0.5rem 1.375rem;
+}
+
+.menu__expandable::after {
+  content: "";
+  width: .675rem;
+  height: .675rem;
+  background: url('../images/icon-arrow-up.svg') no-repeat center center/contain;
+  display: inline-block;
+  margin-left: .875rem;
+}
+
+#menuIcon {
+  z-index: 1;
 }
 
 #menuIcon:hover {
   cursor: pointer;
+}
+
+.login, .register {
+  color: var(--Medium-Gray);
+  background-color: white;
+  width: 80%;
+  height: 2.5rem;
+  padding: unset;
+  margin-bottom: .5rem;
+  font-size: .875rem;
+  font-weight: var(--fw-medium);
+}
+
+.login {
+  margin-top: 1rem;
+  border: none;
 }
 
 .info {

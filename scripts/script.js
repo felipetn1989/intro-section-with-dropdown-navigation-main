@@ -24,17 +24,23 @@ function displayMenu() {
   }
 }
 
+/* Variables definitions */
+
 let menuExpandables = document.querySelectorAll(".menu__expandable");
 
 let innerMenus = document.querySelectorAll(".menu__innerLevel");
 
 let arrows = document.querySelectorAll(".arrowIcon");
 
+/* The forEach will go through both menuExpandables elementes and add a click event to them. Once clicked it will call the function toggleMenu */
+
 menuExpandables.forEach((menuExpandable, index) => {
   menuExpandable.addEventListener("click", () => {
     toggleMenu(index);
   });
 });
+
+/* The first part of the function will run throught all of the inner menus (with the exception of the one I just clicked at) and close them, to make sure only one submenu is open at a given time */
 
 function toggleMenu(i) {
   for (let j = 0; j < innerMenus.length; j++) {
